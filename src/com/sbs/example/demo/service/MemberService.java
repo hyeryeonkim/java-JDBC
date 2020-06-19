@@ -43,4 +43,11 @@ public class MemberService {
 			join("admin", "admin", "관리자");
 		}
 	}
+	//TODO : 게시물의 멤버 아이디와 같은 아이디의 멤버를 가져오게 하는 메서드. method 명이 다른지 자꼬 오류남. 해결하기.
+	public Member getMemberByArticleId(int articleId) {
+		return memberDao.getMemberByArticleId(articleId);
+	}
+
+
+	
 }

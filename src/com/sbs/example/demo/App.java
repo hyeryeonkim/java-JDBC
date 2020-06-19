@@ -53,8 +53,10 @@ public class App {
 	public void start() {
 
 		while (true) {
+			System.out.println("-------------------------------------------------------------------------------------------");
 			System.out.printf("명령어 : ");
 			String command = Factory.getScanner().nextLine().trim();
+			System.out.println("-------------------------------------------------------------------------------------------");
 
 			if (command.length() == 0) {
 				continue;
